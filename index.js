@@ -58,11 +58,11 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
+function multiply(a, b){
+    return a * b;
   }
 
-
+console.log(multiply(3,4));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -74,10 +74,10 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(myAge){
+    return myAge * 7;
 }
-
+console.log(dogYears(25));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -109,6 +109,9 @@ Use the hungryDog function and feeding requirements below to do the following:
 
 function hungryDog(/*add your code here*/){
     /*add your code here*/
+    // if the dogs age is >1
+    // else if 2-4
+    // 7-11
   }
 
 
@@ -127,10 +130,57 @@ Use the game function below to do the following:
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 */
 
-function game(/*add your code here*/){
-    /*add your code here*/
+// function game(choice){
+//   let num = Math.random();
+//   let new ;
+
+//   if  (num <= .32) {
+//     new = 'paper'
+//   }
+//   else if (num <= .65 && num >= .33){
+//     new = 'rock'
+//   }
+//   else (){
+//     new = 'scissors'
+//   }
+
+//   if (choice === new){
+//     return 'its a tie'
+//   }
+//   else if (choice == 'rock' && new == "paper" || choice == 'scissors' && new == "rock" || choice == 'paper' && new == "scissors"){
+//     return 'You Lose'
+//   }
+//   else {
+//     return 'You Win'
+//   }
+// }
+
+
+function game(choice){
+  let num = Math.random();
+  let comp;
+
+  if  (num <= .32) {
+    comp == 'paper'
+  }
+  else if (num <= .65 && num >= .33){
+    comp == 'rock'
+  }
+  else {
+    comp == 'scissors'
+  }
+
+  if (choice == comp){
+    return 'its a tie'
+  }
+  else if (choice == 'rock' && comp == "paper" || choice == 'scissors' && comp == "rock" || choice == 'paper' && comp == "scissors"){
+    return 'you lose'
+  }
+  else {
+    return 'you win'
+  }
 }
-  
+// (choice == 'rock' && new == 'scissors' || choice == 'scissors' && new == 'paper' || choice == 'paper' && new == 'rock')
   
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
