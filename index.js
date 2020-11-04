@@ -30,8 +30,10 @@ Do the following:
 
    HINT: no function required
 */
+// let a = 1;
+// let b = 2;
 
-
+// if ()
 
 
 
@@ -46,7 +48,7 @@ Do the following:
    HINT: look up the Number method
 */
 
-
+// return Number("1999");
 
 
 /*
@@ -58,10 +60,10 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
+function multiply(a , b){
+    return (a * b)
   }
-
+console.log(multiply(3,4))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -74,10 +76,10 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(myAge){
+    return (myAge * 7);
 }
-
+console.log(dogYears(25));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -107,10 +109,26 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-    /*add your code here*/
+function hungryDog(weight,age ){
+    if (age >= 1){
+      if (weight <= 5){
+        return (weight * .05);
+      } else if (weight > 5 && weight <= 10){
+        return (weight * .04);
+      } else if (weight > 10 && weight <=15){
+        return (weight * .03);
+      } else if (weight > 15){
+        return (weight *.02);
+      }
+    } else if (age >= .1666 && age < .333){
+      return (weight * .1)
+    } else if (age >= .3334 && age < .583){
+      return (weight * .05);
+    } else if (age >= .584 && age < 1){
+      return (weight * .04);
+    }
   }
-
+console.log(hungryDog(15,1));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -127,7 +145,7 @@ Use the game function below to do the following:
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 */
 
-function game(/*add your code here*/){
+function game(choice,){
     /*add your code here*/
 }
   
@@ -144,10 +162,10 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-    /*add your code here*/
+function miles(numKM){
+    return (numKM * .621371)
   }
-
+console.log(miles(5))
 
 
 //Task 5b - Feet to CM
@@ -158,10 +176,10 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-    /*add your code here*/
+function feet(numCM){
+    return (numCM / 30.48  )
   }
- 
+ console.log(feet(100))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -194,11 +212,21 @@ Using the grade function below do the following:
    below 60 = F
 */
   
-function grade(/*add your code here*/){
-    /*add your code here*/
+function grade(score){
+    if (score >= 90){
+      return 'A'
+    } else if (score >= 80){
+      return 'you got a B'
+    } else if (score >= 70){
+      return 'C'
+    } else if (score >= 60){
+      return 'D'
+    } else {
+      return 'F'
+    }
   }
   
-  
+  console.log(grade(75))
   
   
 
