@@ -48,7 +48,8 @@ Do the following:
    HINT: look up the Number method
 */
 
-// return Number("1999");
+let num = '1999';
+returnNumber(num);
 
 
 /*
@@ -191,7 +192,7 @@ Using the annoyingSong function below do the following:
   2. At each iteration, it should return this string: 
       "(number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall"
 */
-
+dsf
 function annoyingSong(/*add your code here*/){
         /*add your code here*/
   }
